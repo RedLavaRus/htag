@@ -13,14 +13,10 @@ $page_lvl = 2;
 	<div class="header_box">
 		 
 	</div>
-	<div class="mini_navig">
+<div class="mini_navig">
 		<?php
-		if($page_lvl == 1) { echo "<a href=\"".$cfg->url_web."\">Главная / </a>"; }
-		if($page_lvl == 2) 
-			{ 
-				echo "<a href=\"".$cfg->url_web."\">Главная /</a> "; 
-				echo " <a href=\"".$cfg->url_web."nabori-heshtegov/"."\"> Хештег наборы (Группы) /</a> "; 
-			}
+  			$hleb = new Hleb_krosh;
+  			$hleb -> fun_echo($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator -$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
 		?>
 	</div>
 
