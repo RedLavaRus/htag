@@ -1,11 +1,9 @@
-<?php
-require_once "core/core.php";
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>111</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo $cfg->url_web;?>theam/css/style.css" >
+	<link rel="stylesheet" type="text/css" href="theam/css/style.css" >
 
 
 
@@ -58,7 +56,7 @@ require_once "core/core.php";
 		<p>
 			Мы прикладываем все усилия, что бы закрывать, хоть чутка важные темы. Плюс к этому мы ведем постоянное обновление. Ведь, держать актуальные данные очень важно. Например хештег зима2018 будет популярен только зимой 2018 года, а в 2020 будет крайне непопулярным.
 			С учетом всех этих тенденций, мы формируем базу, действительно полезных хештегов.<br><br>
-			<a href="<?php echo $cfg->url_web;?>nabori-heshtegov/"><div class="podrobno_p">ВОСПОЛЬЗОВАТЬСЯ СЕРВИСОМ</div></a>
+			<a href="nabori-heshtegov"><div class="podrobno_p">ВОСПОЛЬЗОВАТЬСЯ СЕРВИСОМ</div></a>
 		</p>
 		</div>
 		<div class="l_dop_bl">
@@ -66,7 +64,7 @@ require_once "core/core.php";
 		<p>
 			Мы каждый день пробуем новые страдегии, для этого есть полевые аккаунты. Все данные анализируем, и делаем актуальные выводы. Изходя из наших иследований, мы формируем правила и гайды. 
 			Мы не жадные и все наши материалы публикуем в общественый доступ, у нас на сайта. <br><br>
-			<a href="<?php echo $cfg->url_web;?>stati/"><div class="podrobno_p">ВОСПОЛЬЗОВАТЬСЯ СЕРВИСОМ</div></a>
+			<div class="podrobno_p">ВОСПОЛЬЗОВАТЬСЯ СЕРВИСОМ</div>
 		</p>
 		</div>
 		<div class="l_dop_bl">
