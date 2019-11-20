@@ -1,49 +1,22 @@
 <?php
 require_once "core/core.php";
+echo "<!DOCTYPE html>";
+echo "<html>";
+require_once $cfg->url_hard."bloks/head.php";
+echo "<body>";
+require_once $cfg->url_hard."bloks/header.php";
+$page_lvl = 1;
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>111</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo $cfg->url_web;?>theam/css/style.css" >
 
-
-
-</head>
-<body>
-<div class="top_line">
-	<div class="top_content">
-		<div class="top_content_item">
-			HTAG
-		</div>
-		<div class="top_content_item">
-			 &nbsp;
-		</div>
-		<div class="top_content_item">
-			 &nbsp;
-		</div>
-		<div class="top_content_item">
-			Хештеги наборы
-		</div>
-		<div class="top_content_item">
-			Полезные статьи
-		</div>
-		<div class="top_content_item">
-			Автогенератор
-		</div>
-		<div class="top_content_item">
-			ИИ
-		</div>
-		<div class="top_content_item_l">
-			Вход
-		</div>
-	</div>
-
-</div>
 <br>
 <div class="contaner">
 	<div class="header_box">
 		 
+	</div>
+	<div class="mini_navig">
+		<?php
+		if($page_lvl == 1) { echo "<a href=\"".$cfg->url_web."\">Главная \ </a>"; }
+		?>
 	</div>
 	
 	<div class="l_boc">
@@ -97,38 +70,18 @@ require_once "core/core.php";
 		<div class="l_dop_bl">Хештеги Волгодонск</div>
 	</div>
 	<div class="r_boc">
-		<div class="r_rnd">
-			<div class="l_gro">
-				Случайные наборы хештегов <br><br>
-			<div class="l_dop_bl1">Хештеги в краснодаре</div>
-			<div class="l_dop_bl1">Хештеги для тех кто в москве</div>
-			<div class="l_dop_bl1">Хештеги Россия</div>
-			<div class="l_dop_bl1">Хештеги ростов на дону</div>
-			<div class="l_dop_bl1">Хештеги Волгодонск</div>
-
-			</div>
-		</div>
-		<div class="r_rnd">
-			<h3>Случайная статья</h3><br>
-			Хештеги краснода<br>
-			Таким образом реализация намеченных плановых заданий представляет собой интересный эксперимент проверки форм развития. Не следует, однако забывать, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным<br>
-			<div class="podrob_l_s">Читать полностью</div>
-		</div>
-		<div class="l_gro">
-				Подписаться! <br><br>
-				<input type="text" name="name"><br>
-				<input type="email" name="email"><br>
-				<button>Подписаться</button><br>
-
-			</div>
+		<?php 
+			require_once $cfg->url_hard."bloks/aside.php";
+		?>
 	</div>
 
 </div>
 		<div class="clear"></div>
 <br><br><br><br>
 		<div class="clear"></div>
-	<div class="footers">
-1
-	</div>
+
+		<?php 
+			require_once $cfg->url_hard."bloks/footer.php";
+		?>
 </body>
 </html>
