@@ -125,3 +125,19 @@ body{
 	min-height: 200px;
 	background: #353535;
 }
+.item_heah_tag{
+	width: 220px;
+	height: 135px;
+	float:left;
+	background:#eee;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	font-weight: 900;
+}
+.item_heah_tag img{
+	height: 64px;
+	width:64px;
+	margin:  20px calc( ( 220px - 64px ) / 2 );
+	display: block;
+}

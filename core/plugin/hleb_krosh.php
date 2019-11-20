@@ -10,18 +10,8 @@ $$plugin_RL_init_name -> websiteautor = "redlava.ru";
 
 class Hleb_krosh
 {
-	public $login;
-	public $pass;
-	public $id;
-	public function auth()
-	{
-
-	}
-	public function reg()
-	{
-
-	}
-	public function exit()
+	public $lvl;
+	public function fun_echo()
 	{
 		
 	}
