@@ -27,27 +27,14 @@ $page_lvl = 2;
 	
 	<div class="l_boc">
 		<h1>Хештег наборы (Группы)</h1>
-		<div class="item_heah_tag"> 
-			<img src="https://image.flaticon.com/icons/png/128/104/104876.png"><br><br><br><p>Пиар</p>
-		</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
-		<div class="item_heah_tag"> 1</div>
+		<?php
+
+		?>
+
+		<?php
+		$group_stranich = new Group_stranich;
+		$group_stranich->heshtag_nabor_vivod_group($pdo);
+		?>
 		<div class="clear"></div><br>
 		<br><br>
 		

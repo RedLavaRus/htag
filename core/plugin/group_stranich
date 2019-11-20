@@ -1,0 +1,43 @@
+<?php
+$ru_plugin_plus++;
+$plugin_RL_init_name = "plugin_RL_init_".$ru_plugin_plus;
+$$plugin_RL_init_name = new Plugin;
+$$plugin_RL_init_name -> name = "group_stranich";
+$$plugin_RL_init_name -> version = "v.0.0.1";
+$$plugin_RL_init_name -> autor = "JaligWei";
+$$plugin_RL_init_name -> websiteautor = "redlava.ru";
+
+
+class Group_stranich
+{
+	public $l;
+	public function heshtag_nabor_vivod_group($pdo)
+	{
+				/*<div class="item_heah_tag"> 
+					<img src="https://image.flaticon.com/icons/png/128/104/104876.png">
+					<br><br><br>
+					<p>
+					Пиар
+					</p>
+				</div>*/
+				$sth = $pdo->prepare("SELECT * FROM `tage.group`");
+				$sth->execute();
+				while($array = $sth->fetchAll(PDO::FETCH_ASSOC))
+				{
+					echo '<div class="item_heah_tag"> ':
+					echo '<img src="https://image.flaticon.com/icons/png/128/104/104876.png">':
+					echo '<br><br><br>':
+					echo '<p>':
+					echo 'Пиар':
+					echo '</p>':
+					echo '</div>':
+				}
+
+	}
+	
+	
+
+}
+
+
+?>

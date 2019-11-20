@@ -19,6 +19,6 @@ class Hleb_krosh
 	
 
 }
-
+$Hleb_krosh = new Hleb_krosh;
 
 ?>
