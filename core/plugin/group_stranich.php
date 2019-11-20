@@ -29,7 +29,10 @@ class Group_stranich
 				}
 
 	}
-	
+	public function heshtag_nabor_vivod_pod_group($pdo)
+	{
+		
+	}
 	
 
 }

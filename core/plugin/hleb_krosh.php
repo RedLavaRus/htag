@@ -11,7 +11,7 @@ $$plugin_RL_init_name -> websiteautor = "redlava.ru";
 class Hleb_krosh
 {
 	public $lvl;
-	public function fun_echo()
+	public function fun_echo($pdo,$p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,$p10)
 	{
 		
 	}
