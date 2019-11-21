@@ -1,5 +1,5 @@
 <?php
-require_once "../../core/core.php";
+require_once "../../../core/core.php";
 echo "<!DOCTYPE html>";
 echo "<html>";
 require_once $cfg->url_hard."bloks/head.php";
