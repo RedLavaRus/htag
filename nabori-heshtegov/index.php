@@ -16,7 +16,7 @@ $page_lvl = 2;
 <div class="mini_navig">
 		<?php
   			$hleb = new Hleb_krosh;
-  			$hleb -> fun_echo($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator -$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+  			echo $vrem1 = $hleb -> fun_echo($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator -$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
 		?>
 	</div>
 
@@ -29,7 +29,7 @@ $page_lvl = 2;
 
 		<?php
 		$group_stranich = new Group_stranich;
-		$group_stranich->heshtag_nabor_vivod_group($pdo);
+		$group_stranich->heshtag_nabor_vivod_group($pdo,$vrem1);
 		?>
 		<div class="clear"></div><br>
 		<br><br>

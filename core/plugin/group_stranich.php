@@ -11,7 +11,7 @@ $$plugin_RL_init_name -> websiteautor = "redlava.ru";
 class Group_stranich
 {
 	public $l;
-	public function heshtag_nabor_vivod_group($pdo)
+	public function heshtag_nabor_vivod_group($pdo,$url_in)
 	{
 
 				$sth = $pdo->prepare("SELECT * FROM `tage.group`");
@@ -19,13 +19,14 @@ class Group_stranich
 				while($array = $sth->fetch(PDO::FETCH_ASSOC))
 				{
 					$cfg = new configs;
+					echo "<a href='"."/nabori-heshtegov/".$array["url"]."'>";
 					echo '<div class="item_heah_tag"> ';
 					echo '<img src="'.$cfg->url_web."img/group/".$array["img"].'">';
 					echo '<br><br><br>';
 					echo '<p>';
 					echo $array["name"];
 					echo '</p>';
-					echo '</div>';
+					echo '</div></a>';
 				}
 
 	}
