@@ -16,13 +16,17 @@ $page_lvl = 2;
 <div class="mini_navig">
 		<?php
   			$hleb = new Hleb_krosh;
-  			echo $vrem1 = $hleb -> fun_echo($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator -$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+  			$hleb -> fun_echo($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
 		?>
+
 	</div>
 
 	
 	<div class="l_boc">
-		<h1>Хештег наборы (Группы)</h1>
+		<h1>		<?php
+		$content_manager->print_h1($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+
+		?></h1>
 		<?php
 
 		?>
@@ -33,7 +37,13 @@ $page_lvl = 2;
 		?>
 		<div class="clear"></div><br>
 		<br><br>
-		
+		<div class="text_content">
+			<?php
+		$content_manager->print_content($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+
+		?>
+
+		</div>
 	</div>
 	<div class="r_boc">
 		<?php 

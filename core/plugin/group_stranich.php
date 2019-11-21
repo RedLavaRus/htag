@@ -31,8 +31,20 @@ class Group_stranich
 
 	}
 	public function heshtag_nabor_vivod_pod_group($pdo)
-	{
-		
+	{			
+				$sth = $pdo->prepare("SELECT * FROM `tage.group`");
+				$sth->execute();				
+				while($array = $sth->fetch(PDO::FETCH_ASSOC))
+				{
+					$cfg = new configs;
+					echo "<a href='"."/nabori-heshtegov/".$array["url"]."'>";
+					echo '<div class="item_heah_tag_i"> ';
+					echo ' ';
+					echo '<p>';
+					echo $array["name"];
+					echo '</p>';
+					echo '</div></a>';
+				}
 	}
 	
 

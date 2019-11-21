@@ -21,10 +21,16 @@ $page_lvl = 1;
 	</div>
 	
 	<div class="l_boc">
-		<h1>HTAG.SITE - Главный портал, для продвижение профилей в социальных сетях.</h1>
+		<h1><?php
+		$content_manager->print_h1($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+
+		?></h1>
 		
 		<p>
-			Уже на протяжение долгого периуда времени. Мы занимаемся созданием  и продвижением аккаунтов в соц сетях. Разумеется со времинем, у нас вырабатались определенные успешные алгоритмы. И их все мы вывели, либо занимаемся выведением в сервисы. В данный момент все наши сервисы абсолютно бесплатны.
+			<?php
+		$content_manager->print_content($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+
+		?>
 		</p>
 		<h2>Наши сервисы</h2>
 		<div class="l_dop_bl">

@@ -22,7 +22,10 @@ $page_lvl = 3;
 
 	
 	<div class="l_boc">
-		<h1>Хештег наборы (Группы)</h1>
+		<h1><?php
+		$content_manager->print_h1($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+
+		?></h1>
 		<?php
 
 		?>
@@ -33,7 +36,20 @@ $page_lvl = 3;
 		//$group_stranich->heshtag_nabor_vivod_pod_group($pdo);
 		?>
 		<div class="clear"></div><br>
-		<br><br>
+		
+		<div class="text_content">
+
+		<br>
+				<?php
+		$group_stranich = new Group_stranich;
+		$group_stranich->heshtag_nabor_vivod_pod_group($pdo,$vrem1);
+		?>
+
+						<?php
+		$content_manager->print_content($pdo,$navigator ->url_lvl1,$navigator ->url_lvl2,$navigator ->url_lvl3,$navigator ->url_lvl4,$navigator ->$url_lvl5,$navigator ->url_lvl6,$navigator ->url_lvl7,$navigator ->url_lvl8,$navigator ->url_lvl9,$navigator ->url_lvl10);
+
+		?>
+		</div>
 		
 	</div>
 	<div class="r_boc">
